@@ -299,9 +299,20 @@ ProblemTwoSum::ProblemTwoSum(const std::string& m_name, unsigned short m_number)
 		{ twoSum_v4, "twoSum_v4 O(n) using unordered map"}
 	};
 	m_numberOfSolutions = (unsigned short)solutions.size();
+
+	solutionsAny.push_back({ twoSum_v1, "twoSum_v1 O(n^2)" });
+
+	tuplesAny.push_back({
+		twoSum_v1,
+		"twoSum_v1 O(n^2)",
+		std::pair<std::vector<int>, int>({ 2,7,11,15 }, 9),
+		std::vector<int>{ 0, 1 }
+		});
+
+	auto a = std::vector<int>{ 0, 1 };
 }
 
-void ProblemTwoSum::Run(unsigned char solutionNumber)
+void ProblemTwoSum::RunInternal(unsigned char solutionNumber)
 {
 	const unsigned char chosenSolutionIndex = solutionNumber - 1;
 

@@ -123,7 +123,7 @@ ProblemContainsDuplicate::ProblemContainsDuplicate(const std::string& m_name, un
 	m_numberOfSolutions = (unsigned short)solutions.size();
 }
 
-void ProblemContainsDuplicate::PrintSolutions()
+void ProblemContainsDuplicate::PrintSolutionsInternal()
 {
 	for (size_t i = 0; i < m_numberOfSolutions; i++)
 	{
@@ -131,7 +131,7 @@ void ProblemContainsDuplicate::PrintSolutions()
 	}
 }
 
-void ProblemContainsDuplicate::Run(unsigned char solutionNumber)
+void ProblemContainsDuplicate::RunInternal(unsigned char solutionNumber)
 {
 	const unsigned char chosenSolutionIndex = solutionNumber - 1;
 
@@ -153,9 +153,4 @@ void ProblemContainsDuplicate::Run(unsigned char solutionNumber)
 	{
 		std::cout << (results[i] ? "contains" : "missing") << ": " << (results[i] == inputOutputPairs[i].second ? "correct" : "wrong") << "\n";
 	}
-}
-
-void ProblemContainsDuplicate::PrintResults()
-{
-	std::cout << "\nSolution run completed\n";
 }

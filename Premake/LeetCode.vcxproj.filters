@@ -1,3 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Source\Helpers.cpp" />
+    <ClCompile Include="..\Source\main.cpp" />
+    <ClCompile Include="..\Source\0.NewProblemTemplate.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\1.TwoSum.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\2.AddTwoNumbers.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\3.LongestStringNoRepeat.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\4.MedianOfTwoSortedArrays.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\5.LongestPalindromicSubstring.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\217.ContainsDuplicate.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\6.ZigzagConversion.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Helpers.h" />
+    <ClInclude Include="..\Source\Problem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Problems">
+      <UniqueIdentifier>{373c5195-1fd6-43b3-a38c-f7a926f58a6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
 </Project>

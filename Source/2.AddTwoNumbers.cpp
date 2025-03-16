@@ -620,7 +620,7 @@ ProblemAddTwoNumbers::ProblemAddTwoNumbers(const std::string& m_name, unsigned s
     m_numberOfSolutions = (unsigned short)solutions.size();
 }
 
-void ProblemAddTwoNumbers::Run(unsigned char solutionNumber)
+void ProblemAddTwoNumbers::RunInternal(unsigned char solutionNumber)
 {
     // #TODO
 }

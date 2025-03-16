@@ -16,7 +16,7 @@ const int count = sizeof(problems) / sizeof(Problem*);
 unsigned short GetNumberFromUser();
 void PrintProblemList();
 
-int main()
+int main_unused()
 {
 	unsigned short problemNumber = 0;
 
