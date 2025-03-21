@@ -8,8 +8,7 @@
 
 Problem* problems[] = {
 	new ProblemTwoSum("TwoSum", 1),
-	new ProblemAddTwoNumbers("AddTwoNumbers", 2),
-	new ProblemContainsDuplicate("ContainsDuplicate", 217)
+	new ProblemAddTwoNumbers("AddTwoNumbers", 2)
 };
 const int count = sizeof(problems) / sizeof(Problem*);
 

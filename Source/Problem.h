@@ -112,21 +112,3 @@ public:
 	// virtual void PrintSolutions() override;
 	// virtual void PrintResults() override;
 };
-
-// 217. Contains Duplicate
-class ProblemContainsDuplicate : public Problem
-{
-public:
-	ProblemContainsDuplicate(const std::string& m_name, unsigned short m_number);
-
-	virtual void RunInternal(unsigned char solutionNumber) override;
-
-private:
-	// #TODO Find a way to add unique string names to solutions, without extra code in every problem
-	void PrintSolutionsInternal();
-
-	std::vector<std::pair<std::vector<int>, bool>> inputOutputPairs;
-
-	typedef bool(*SolutionFuncPtr)(std::vector<int>&);
-	std::vector<std::pair<SolutionFuncPtr, std::string>> solutions;
-};

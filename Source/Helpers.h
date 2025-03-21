@@ -35,3 +35,6 @@ bool Equal(std::vector<int> a, std::vector<int> b, bool orderDependent=true);
 // Random
 void SeedRand(int seed);
 int RandomInRange(int rangeMin, int rangeMax);
+
+// Numbers
+unsigned char NumberOfDigits(int Value, int Base);

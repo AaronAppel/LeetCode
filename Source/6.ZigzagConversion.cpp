@@ -67,7 +67,7 @@ std::string ZigzagConversion_v2(const std::string s, const int numRows)
     return result;
 }
 
-void main()
+void main_ZigzagConverion()
 {
     std::string result;
     result.reserve(100);

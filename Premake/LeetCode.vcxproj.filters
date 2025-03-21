@@ -27,6 +27,12 @@
     <ClCompile Include="..\Source\6.ZigzagConversion.cpp">
       <Filter>Problems</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\7.ReverseInteger.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\9.PalindromeNumber.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Helpers.h" />

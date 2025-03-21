@@ -79,3 +79,21 @@ int RandomInRange(int rangeMin, int rangeMax)
 	assert(rangeMax - rangeMin);
 	return (rand() % (rangeMax - rangeMin)) + rangeMin;
 }
+
+unsigned char NumberOfDigits(int Value, int Base)
+{
+	if (Value == 0)
+	{
+		return 1;
+	}
+
+	unsigned char digits = 0;
+
+	while (Value != 0)
+	{
+		Value /= Base;
+		++digits;
+	}
+
+	return digits;
+}
