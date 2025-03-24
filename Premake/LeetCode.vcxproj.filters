@@ -33,10 +33,15 @@
     <ClCompile Include="..\Source\9.PalindromeNumber.cpp">
       <Filter>Problems</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\12.IntegerToRoman.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\13.RomanToInteger.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Helpers.h" />
-    <ClInclude Include="..\Source\Problem.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Problems">

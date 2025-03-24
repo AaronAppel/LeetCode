@@ -5,7 +5,6 @@
 #include <vector>
 
 // #include "Helpers.h"
-#include "Problem.h"
 
 // Link to leetcode problem https://leetcode.com/problems/palindrome-number/description/
 
@@ -72,7 +71,7 @@ bool PalindromeNumber_v2(int x)
 
 typedef bool(*SolutionFuncPtr)(int);
 
-int main()
+void main_PalindromeNumber()
 {
 	SolutionFuncPtr solutionFunc = PalindromeNumber_v2;
 

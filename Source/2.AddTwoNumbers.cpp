@@ -1,4 +1,7 @@
 
+#include <algorithm>
+#include <array>
+#include <assert.h>
 #include <iostream>
 
 #include "Helpers.h"
@@ -455,13 +458,61 @@ ListNode* LoadNodeList(int arrSize, int* arr)
     {
         head[i].val = arr[i];
 
-        if (i +1 < arrSize)
+        if (i + 1 < arrSize)
         {
             head[i].next = &head[i + 1];
         }
     }
     return head;
 }
+
+typedef ListNode*(*SolutionFuncPtr)(ListNode*, ListNode*);
+
+void main_AddTwoNumbers()
+{
+    SolutionFuncPtr solutionFunc = AddTwoNumbers_v4;
+
+    // Negative numbers
+    int arr1[] = { -2,-4,-3 };
+    int arr2[] = { -5,-6,-4 };
+    int arr3[] = { 0 };
+    int arr5[] = { -9,-9,-9,-9,-9,-9,-9 };
+    int arr6[] = { -9,-9,-9,-9 };
+
+    // Positive numbers
+    int arr7[] = { 2,4,3 };
+    int arr8[] = { 5,6,4 };
+    int arr9[] = { 0 };
+    int arr10[] = { 9,9,9,9,9,9,9 };
+    int arr11[] = { 9,9,9,9 };
+
+    // Connect nodes
+    ListNode* r1 = LoadNodeList(sizeof(arr7) / sizeof(int), arr7);
+    ListNode* r2 = LoadNodeList(sizeof(arr8) / sizeof(int), arr8);
+
+    ListNode* r3 = LoadNodeList(sizeof(arr9) / sizeof(int), arr9);
+    ListNode* r4 = LoadNodeList(sizeof(arr9) / sizeof(int), arr9);
+
+    ListNode* r5 = LoadNodeList(sizeof(arr10) / sizeof(int), arr10);
+    ListNode* r6 = LoadNodeList(sizeof(arr11) / sizeof(int), arr11);
+
+    // Solve
+    // #TODO Test and fill out expected output
+
+    std::array<int, 100> expectedOutput;
+
+    expectedOutput = { 7, 0, 8 };
+    // #TODO Return is a linked list, not an array
+    assert(memcmp(solutionFunc(r1, r2), expectedOutput.data(), expectedOutput.size()));
+
+    expectedOutput = { 0 };
+    assert(memcmp(solutionFunc(r3, r4), expectedOutput.data(), expectedOutput.size()));
+
+    expectedOutput = { 8, 9, 9, 9, 0, 0, 0, 1 };
+    assert(memcmp(solutionFunc(r5, r6), expectedOutput.data(), expectedOutput.size()));
+}
+
+// int main() { main_AddTwoNumbers(); }
 
 #define NEGATIVE_NUMBERS 0
 void AddTwoNumbers_Run(int solutionNumber)
@@ -487,8 +538,6 @@ void AddTwoNumbers_Run(int solutionNumber)
 
     ListNode* r5 = LoadNodeList(sizeof(arr5) / sizeof(int), arr5);
     ListNode* r6 = LoadNodeList(sizeof(arr6) / sizeof(int), arr6);
-
-    // Helpers::RandomInRange(min, max)
 
     const double startTime = Now();
 
@@ -597,30 +646,4 @@ void AddTwoNumbers_Run(int solutionNumber)
 
     delete[] r1;
     delete[] r2;
-}
-
-#include "Problem.h"
-
-ProblemAddTwoNumbers::ProblemAddTwoNumbers(const std::string& m_name, unsigned short m_number) :
-    Problem(m_name, m_number)
-{
-    // #TODO Data
-
-    solutions = {
-        { AddTwoNumbers_v1, "AddTwoNumbers_v1" },
-        { AddTwoNumbers_v2, "AddTwoNumbers_v2" },
-        { AddTwoNumbers_v3, "AddTwoNumbers_v3" },
-        { AddTwoNumbers_v4, "AddTwoNumbers_v4" },
-        { AddTwoNumbers_v5, "AddTwoNumbers_v5" },
-        { AddTwoNumbers_v6, "AddTwoNumbers_v6" },
-        { AddTwoNumbers_v7, "AddTwoNumbers_v7" },
-        { AddTwoNumbers_v8, "AddTwoNumbers_v8" },
-        { AddTwoNumbers_v9, "AddTwoNumbers_v9" }
-    };
-    m_numberOfSolutions = (unsigned short)solutions.size();
-}
-
-void ProblemAddTwoNumbers::RunInternal(unsigned char solutionNumber)
-{
-    // #TODO
 }

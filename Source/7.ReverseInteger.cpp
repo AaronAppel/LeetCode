@@ -3,7 +3,6 @@
 #include <cmath>
 
 #include "Helpers.h"
-#include "Problem.h"
 
 // Link to leetcode problem https://leetcode.com/problems/reverse-integer/description/
 
