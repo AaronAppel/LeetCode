@@ -1,8 +1,6 @@
 
 #include <assert.h>
 
-// #include "Helpers.h"
-
 // Link to leetcode problem https://leetcode.com/problemset/
 
 bool NewProblem_v1()

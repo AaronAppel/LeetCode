@@ -3,8 +3,6 @@
 #include <iostream>
 #include <vector>
 
-#define STRINGIFY(x) #x
-
 // Math
 double SumVector(const std::vector<double>& doubles);
 

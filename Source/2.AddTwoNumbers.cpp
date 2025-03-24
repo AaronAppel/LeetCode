@@ -214,7 +214,7 @@ ListNode* AddTwoNumbers_v4(ListNode* l1, ListNode* l2) {
 // Unsubmitted and intentionally unusable
 ListNode* AddTwoNumbers_v5(ListNode* l1, ListNode* l2) {
 
-    Print("%s solution doesn't work but is an example solution attempt", STRINGIFY(__FUNCTION__));
+    Print("%s solution doesn't work but is an example solution attempt", __FUNCTION__);
     return nullptr; // #NOTE Function
 
     // #DIFF_v4 Make it safer for null arguments, and avoid any allocations,
@@ -264,7 +264,7 @@ ListNode* AddTwoNumbers_v6(ListNode* l1, ListNode* l2) {
     // // than problems simple / so I'll abandon this attempt for performance gain.
     // https://www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/
 
-    Print("%s solution doesn't work but is an example solution attempt", STRINGIFY(__FUNCTION__));
+    Print("%s solution doesn't work but is an example solution attempt", __FUNCTION__);
     return nullptr; // #NOTE Function
 }
 
