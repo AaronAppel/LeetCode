@@ -30,6 +30,24 @@ void PrintVector(const std::vector<T>& vector)
 // Equality
 bool Equal(std::vector<int> a, std::vector<int> b, bool orderDependent=true);
 
+template <typename T>
+bool Equal(const std::vector<T>& a, const std::vector<T>& b)
+{
+	if (a.size() != b.size())
+	{
+		return false;
+	}
+
+	for (size_t i = 0; i < a.size(); i++)
+	{
+		if (a[i] != b[i])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
 // Random
 void SeedRand(int seed);
 int RandomInRange(int rangeMin, int rangeMax);

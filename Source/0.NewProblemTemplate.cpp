@@ -8,6 +8,9 @@ bool NewProblem_v1()
 	return false;
 }
 
+#include "Helpers.h"
+#include "Testing.h"
+
 typedef bool(*SolutionFuncPtr)();
 
 void main_NewProblem()
