@@ -142,4 +142,4 @@ void main_FizzBuzz()
 	int bp = 0;
 }
 
-int main() { main_FizzBuzz(); };
+// int main() { main_FizzBuzz(); };

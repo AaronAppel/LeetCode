@@ -2,6 +2,9 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+
+#include "Helpers.h"
 
 #define STRINGIFY(x) #x
 

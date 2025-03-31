@@ -45,6 +45,9 @@
     <ClCompile Include="..\Source\412.FizzBuzz.cpp">
       <Filter>Problems</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\8.StringToInteger.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Helpers.h" />

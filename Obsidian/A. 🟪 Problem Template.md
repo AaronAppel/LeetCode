@@ -6,7 +6,6 @@ Copy/pasted description
 ---
 
 My Final Solution :
-```cpp
-// Pending...
+```cpp live:true sym:"" file:".cpp"
 ```
 #### Notes :
