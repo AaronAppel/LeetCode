@@ -3,7 +3,6 @@
 #include <string>
 #include <map>
 
-
 unsigned short GetNumberFromUser();
 
 int main_unused()

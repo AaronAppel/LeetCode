@@ -7,6 +7,7 @@
 *.idb
 *.ilk
 *.exe
+!Premake5.exe
 *.ipch
 *.pch
 *.VC.db
