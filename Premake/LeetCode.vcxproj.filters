@@ -48,6 +48,9 @@
     <ClCompile Include="..\Source\8.StringToInteger.cpp">
       <Filter>Problems</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\35.SearchInsertPosition.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Helpers.h" />
