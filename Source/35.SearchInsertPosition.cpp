@@ -15,9 +15,9 @@ int SearchInsert_v1(const std::vector<int>& nums, int target)
 	if (nums.size() > 0)
 	{
 		int numsRange = nums.size() / 2;
-		int index = numsRange;
+		unsigned int index = numsRange;
 
-		const int loopRange = std::sqrt(nums.size()) + 1;
+		const int loopRange = (int)std::sqrt(nums.size()) + 1;
 		for (size_t i = 0; i < loopRange; i++)
 		{
 			if (index < 0)
@@ -100,7 +100,7 @@ int SearchInsert_v2(const std::vector<int>& nums, int target)
 		int numsRange = nums.size() / 2;
 		int index = numsRange;
 
-		const int loopRange = std::sqrt(nums.size()) + 1;
+		const int loopRange = (int)std::sqrt(nums.size()) + 1;
 		for (size_t i = 0; i < loopRange; i++)
 		{
 			if (index < 0)
