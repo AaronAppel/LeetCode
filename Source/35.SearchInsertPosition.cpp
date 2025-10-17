@@ -229,4 +229,4 @@ void main_SearchInsertPosition()
 	int bp = 0;
 }
 
-int main() { main_SearchInsertPosition(); };
+// int main() { main_SearchInsertPosition(); };
