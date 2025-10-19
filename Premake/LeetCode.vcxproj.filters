@@ -51,6 +51,18 @@
     <ClCompile Include="..\Source\35.SearchInsertPosition.cpp">
       <Filter>Problems</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\10.RegularExpressionMatching.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\14.LongestCommonPrefix.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\15.3Sum.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\16.3SumClosest.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Helpers.h" />

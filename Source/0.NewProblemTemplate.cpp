@@ -1,5 +1,6 @@
 
 #include <assert.h>
+#include <vector>
 
 // Link to leetcode problem https://leetcode.com/problemset/
 
