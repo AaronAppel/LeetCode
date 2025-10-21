@@ -32,4 +32,4 @@ void main_RegularExpressionMatching()
 	int bp = 0;
 }
 
-int main() { main_RegularExpressionMatching(); }
+// int main() { main_RegularExpressionMatching(); }
