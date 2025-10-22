@@ -69,6 +69,21 @@
     <ClCompile Include="..\Source\18.4Sum.cpp">
       <Filter>Problems</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\19.RemoveNthNodeFromEndOfList.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\20.ValidParentheses.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\21.MergeTwoSortedLists.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\22.GenerateParentheses.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\23.MergeKSortedLists.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Helpers.h" />

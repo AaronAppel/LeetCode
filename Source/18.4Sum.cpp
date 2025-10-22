@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <vector>
 
-// Link to leetcode problem https://leetcode.com/problemset/
+// Link to leetcode problem https://leetcode.com/problems/4sum/
 
 std::vector<std::vector<int>> fourSum_v1(const std::vector<int>& nums, int target) {
 	return { };

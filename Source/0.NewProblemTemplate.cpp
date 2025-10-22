@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <vector>
 
-// Link to leetcode problem https://leetcode.com/problemset/
+// https: Link to leetcode problem
 
 bool NewProblem_v1()
 {
