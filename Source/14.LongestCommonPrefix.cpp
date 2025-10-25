@@ -76,7 +76,7 @@ void main_LongestCommonPrefix()
 	assert(solutionFunc(input) == "fl");
 
 	input = { "abcdefghijklmno", "abcdefghijklmnopqrstuvwxyz" };
-	assert(solutionFunc(input) == "a");
+	assert(solutionFunc(input) == "abcdefghijklmno");
 
 	// Test solution performance
 	std::vector<SolutionFuncPtr> funcs = {
@@ -86,4 +86,4 @@ void main_LongestCommonPrefix()
 	// RunSolutions(funcs, "fl", input);
 }
 
-int main() { main_LongestCommonPrefix(); }
+// int main() { main_LongestCommonPrefix(); }

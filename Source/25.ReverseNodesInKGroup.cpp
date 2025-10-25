@@ -36,7 +36,7 @@ void main_ReverseNodesInKGroup()
 		ReverseNodesInKGroup_v1,
 	};
 
-	RunSolutions(funcs, nullptr, nullptr);
+	RunSolutions(funcs, nullptr, nullptr, 0);
 
 	int bp = 0;
 }
