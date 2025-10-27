@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <vector>
 
-// https: Link to leetcode problem
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 int RemoveDuplicatesFromSortedArray_v1(std::vector<int>& nums)
 {

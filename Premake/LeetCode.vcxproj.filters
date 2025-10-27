@@ -90,6 +90,12 @@
     <ClCompile Include="..\Source\25.ReverseNodesInKGroup.cpp">
       <Filter>Problems</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\26.RemoveDuplicatesFromSortedArray.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\27.RemoveElement.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Helpers.h" />
